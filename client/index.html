@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Instagram</title>
+    <link rel="icon" href="logo-ig.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            width: 300px;
+        }
+        .instagram-logo {
+            width: 100px;
+            margin: 0 auto;
+            display: block;
+            margin-bottom: 40px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #dbdbdb;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #0095f6;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            background: linear-gradient(to right, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        }
+        .login-btn:hover {
+            background-color: #0085e0;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 18px 0;
+        }
+        .line {
+            flex: 1;
+            border: none;
+            border-top: 1px solid #dbdbdb;
+            margin: 0 10px;
+        }
+        .or {
+            color: #8e8e8e;
+            background-color: #fff;
+            padding: 0 18px;
+        }
+        /* Styles for the 'Forgot password?' and 'Sign up' links */
+        .forgot-password, .sign-up-link {
+            color: #00376b;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+            margin-top: 12px;
+        }
+        .signup-text {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="logo-ig.png" alt="Instagram" class="instagram-logo">
+        <form id="loginForm">
+            <input type="text" name="username" class="form-input" placeholder="Phone number, username, or email">
+            <input type="password" name="password" class="form-input" placeholder="Password">
+            <button type="submit" id="submitButton" class="login-btn">Log In</button>
+        </form>
+        <div class="divider">
+          <hr class="line" />
+          <span class="or">OR</span>
+          <hr class="line" />
+      </div>
+      <a href="#" class="forgot-password">Forgot password?</a>
+      <p class="signup-text">Don't have an account? <a href="#" class="sign-up-link">Sign up</a></p>
+    </div>
+    <script src="index.js" defer></script>
+</body>
+</html>
